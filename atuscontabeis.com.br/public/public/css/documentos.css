@@ -1,4 +1,49 @@
-#documentos
-{
-    color: var(--cor-nav-ativo);
+/* documentos.css */
+
+/* Hero específica para a página de documentos */
+.hero-docs {
+    background: linear-gradient(rgba(234, 158, 59, 0.1), rgba(234, 158, 59, 0.1)), url('/public/img/wallpaper-valenca.jpg');
+    background-size: cover;
+    background-position: center;
+    padding: 100px 0;
+}
+
+/* Estilo para os cards de documentos */
+.doc-card {
+    transition: all 0.3s ease;
+    border: 1px solid rgba(0,0,0,0.05) !important;
+}
+
+.doc-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 30px rgba(0,0,0,0.1) !important;
+    border-color: var(--cor-warning) !important;
+}
+
+/* Estilização dos ícones */
+.doc-icon {
+    font-size: 1.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 60px;
+    height: 60px;
+}
+
+/* Efeito de cores suaves para os fundos dos ícones (Bootstrap utilities extras) */
+.bg-warning-subtle { background-color: rgba(234, 158, 59, 0.15); }
+.bg-success-subtle { background-color: rgba(25, 135, 84, 0.15); }
+.bg-danger-subtle { background-color: rgba(220, 53, 69, 0.15); }
+
+/* Ativo no menu */
+#documentos {
+    color: var(--cor-warning) !important;
+    font-weight: 700;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .hero-docs {
+        padding: 60px 0;
+    }
 }
