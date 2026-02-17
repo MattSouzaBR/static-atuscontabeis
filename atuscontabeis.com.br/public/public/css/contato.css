@@ -1,4 +1,44 @@
-#contato
-{
-    color: var(--cor-nav-ativo);
+/* contato.css */
+
+/* Hero menor para páginas internas */
+.hero-header-small {
+    background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('/public/img/wallpaper-valenca.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 35vh;
+    min-height: 250px;
+    margin-bottom: 0;
+}
+
+/* Ajuste para o card subir sobre a hero */
+.mt-n5 {
+    margin-top: -80px !important;
+    position: relative;
+    z-index: 5;
+}
+
+/* Estilo para os inputs do formulário */
+.form-control, .form-select {
+    border-radius: 10px;
+    background-color: #f8f9fa;
+    transition: all 0.3s ease;
+}
+
+.form-control:focus, .form-select:focus {
+    background-color: #fff;
+    border-color: var(--cor-warning);
+    box-shadow: 0 0 0 0.25rem rgba(234, 158, 59, 0.1);
+}
+
+/* Destaque no item de menu ativo */
+#contato {
+    color: var(--cor-warning) !important;
+    font-weight: 700;
+}
+
+/* Responsividade */
+@media (max-width: 991px) {
+    .mt-n5 {
+        margin-top: -40px !important;
+    }
 }
