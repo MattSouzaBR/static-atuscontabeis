@@ -56,3 +56,39 @@
 {
     background-color: var(--cor-fundo-da-pagina);
 }
+
+/* Refinamentos para a seção elegante */
+.atus-informacoes {
+    background-color: var(--cor-fundo-da-pagina);
+}
+
+.tracking-wider {
+    letter-spacing: 0.15em;
+}
+
+/* Efeito de hover suave nos cards de valor */
+.atus-informacoes .shadow-sm {
+    transition: transform 0.3s ease, shadow 0.3s ease;
+}
+
+.atus-informacoes .shadow-sm:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.08) !important;
+}
+
+/* Ajuste de cor do texto destaque (use a cor principal da Atus se não for azul) */
+.text-primary-emphasis {
+    color: #2c3e50; /* Um azul marinho profundo/cinza profissional */
+}
+
+/* Deixar o fundo dos cards ligeiramente diferente do fundo da página */
+.bg-white {
+    background-color: #ffffff !important;
+}
+
+/* Ajuste para dispositivos móveis */
+@media (max-width: 768px) {
+    .display-6 {
+        font-size: 1.8rem;
+    }
+}
