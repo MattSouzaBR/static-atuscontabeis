@@ -1,65 +1,89 @@
-/* Variáveis para facilitar ajustes */
+/* Identidade Visual Consolidada */
 :root {
-    --cor-onda: #ea9e3b;
-    --cor-fundo-translucido: #ffffffd7;
-    --cor-nav-ativo: #ea9e3b;
+    --cor-warning: #ea9e3b;
 }
 
-#inicio { color: var(--cor-nav-ativo); }
+body {
+    padding-top: 80px; /* Compensa o menu fixo */
+    font-family: 'Inter', sans-serif;
+    color: #333;
+}
 
-/* Banner Principal */
-.atus-banner-container {
-    background-image: url(/public/img/wallpaper-valenca.jpg);
-    background-position: center;
-    background-repeat: no-repeat;
+/* Hero Resgatando o Wallpaper */
+.hero-header {
+    background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url('/public/img/wallpaper-valenca.jpg');
     background-size: cover;
-    height: 60vh;
-    min-height: 400px;
+    background-position: center;
+    height: 70vh;
+    min-height: 450px;
 }
 
-.atus-banner-content {
-    background-color: var(--cor-fundo-translucido);
-    border-radius: 20px;
-    max-width: 600px;
+/* O "Glassmorphism" (Efeito de vidro elegante) */
+.hero-glass-card {
+    background: rgba(255, 255, 255, 0.92);
+    backdrop-filter: blur(10px);
+    border-radius: 24px;
+    max-width: 650px;
+    box-shadow: 0 20px 40px rgba(0,0,0,0.15);
+    border-left: 10px solid var(--cor-warning);
 }
 
-/* Divisor de Onda */
-.custom-shape-divider-bottom-1710505427 {
+/* Divisor de Ondas */
+.wave-container {
+    margin-top: -60px;
     position: relative;
-    width: 100%;
-    overflow: hidden;
-    line-height: 0;
+    z-index: 2;
     transform: rotate(180deg);
-    margin-top: -50px;
-    z-index: 1;
 }
-  
-.custom-shape-divider-bottom-1710505427 svg {
+
+.wave-container svg {
     display: block;
-    width: calc(100% + 1.3px);
+    width: 100%;
     height: 60px;
 }
 
-/* Blocos de Conteúdo (Sua Identidade Visual) */
-.atus-informacoes, .atus-servicos, .atus-empresa {
-    background-color: #f8f9fa; /* Fundo leve para destacar o branco */
+/* Cards de Serviço: O Salto de Melhoria */
+.service-card {
+    background-color: #fff;
+    border: 1px solid #eee !important;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.atus-banner-content-secondary {
-    background-color: var(--cor-fundo-translucido);
-    border-radius: 20px;
-    border: 1px solid rgba(0,0,0,0.05);
+.service-card:hover {
+    border-color: var(--cor-warning) !important;
+    transform: translateY(-8px);
+    box-shadow: 0 15px 30px rgba(0,0,0,0.05);
 }
 
-.tracking-wider { letter-spacing: 0.1rem; }
+/* Tipografia e SEO */
+.tracking-wider {
+    letter-spacing: 0.12em;
+}
 
-/* Tipografia */
-h2, h3 { color: #2c3e50; }
+.text-warning {
+    color: var(--cor-warning) !important;
+}
 
-.x-small { font-size: 0.8rem; }
-.small { font-size: 1rem; }
-.medium { font-size: 1.2rem; }
-.large { font-size: 1.4rem; }
-.x-large { font-size: 1.6rem; }
-.xx-large { font-size: 1.8rem; }
-.xxx-large { font-size: 2rem; }
+.x-small {
+    font-size: 0.8rem;
+}
+
+/* Menu Animado */
+.nav-link {
+    position: relative;
+}
+
+.nav-link::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: var(--cor-warning);
+    transition: width 0.3s ease;
+}
+
+.nav-link:hover::after {
+    width: 100%;
+}
