@@ -1,0 +1,38 @@
+/* blog.css */
+
+.hero-blog {
+    background: linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.8)), url('/public/img/wallpaper-valenca.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+.blog-card {
+    transition: all 0.3s ease;
+    border: 1px solid rgba(0,0,0,0.05);
+}
+
+.blog-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 20px 40px rgba(0,0,0,0.1) !important;
+}
+
+.post-thumb {
+    height: 200px;
+    background-size: cover;
+    background-position: center;
+    background-color: #eee;
+}
+
+.bg-warning-subtle { background-color: rgba(234, 158, 59, 0.1); }
+.bg-success-subtle { background-color: rgba(25, 135, 84, 0.1); }
+
+/* Estilo do Conteúdo da Postagem */
+.content p {
+    margin-bottom: 1.5rem;
+    font-size: 1.1rem;
+}
+
+.breadcrumb-item a {
+    text-decoration: none;
+    font-weight: 600;
+}
