@@ -1,4 +1,55 @@
-#empresa
-{
-    color: var(--cor-nav-ativo);
+/* empresa.css */
+
+/* Hero específica */
+.hero-empresa {
+    background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('/public/img/wallpaper-valenca.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 50vh;
+    min-height: 350px;
+}
+
+/* Badge de Experiência flutuante sobre a imagem */
+.experience-badge {
+    bottom: -30px;
+    right: 20px;
+    width: 160px;
+    text-align: center;
+    z-index: 10;
+}
+
+/* Cards de vidro escuro para a seção de Missão/Visão */
+.glass-dark-card {
+    background: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(8px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 30px;
+    transition: all 0.4s ease;
+}
+
+.glass-dark-card:hover {
+    background: rgba(255, 255, 255, 0.1);
+    border-color: var(--cor-warning);
+    transform: translateY(-10px);
+}
+
+/* Link ativo */
+#empresa {
+    color: var(--cor-warning) !important;
+    font-weight: 700;
+}
+
+/* Responsividade */
+@media (max-width: 991px) {
+    .experience-badge {
+        position: relative;
+        bottom: 0;
+        right: 0;
+        margin-top: 20px;
+        width: 100%;
+    }
+    
+    .hero-empresa {
+        height: 40vh;
+    }
 }

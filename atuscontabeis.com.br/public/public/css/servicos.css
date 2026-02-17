@@ -1,4 +1,47 @@
-#servicos
-{
-    color: var(--cor-nav-ativo);
+/* servicos.css */
+
+/* Hero específica */
+.hero-servicos {
+    background: linear-gradient(rgba(234, 158, 59, 0.05), rgba(234, 158, 59, 0.05)), url('/public/img/wallpaper-valenca.jpg');
+    background-size: cover;
+    background-position: center;
+    padding: 120px 0;
+    border-bottom: 1px solid rgba(0,0,0,0.05);
+}
+
+/* Cards de Serviço */
+.service-card {
+    transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    border-bottom: 4px solid transparent !important;
+}
+
+.service-card:hover {
+    transform: translateY(-12px);
+    box-shadow: 0 25px 50px rgba(0,0,0,0.08) !important;
+    border-bottom: 4px solid var(--cor-warning) !important;
+    background-color: #fff;
+}
+
+.service-icon {
+    font-size: 2.5rem;
+    display: inline-block;
+}
+
+/* Destaque no item de menu */
+#servicos {
+    color: var(--cor-warning) !important;
+    font-weight: 700;
+}
+
+/* Estilo para listas internas dos cards */
+.service-card ul li {
+    margin-bottom: 8px;
+    font-weight: 500;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .hero-servicos {
+        padding: 80px 0;
+    }
 }

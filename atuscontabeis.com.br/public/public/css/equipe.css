@@ -1,4 +1,68 @@
-#equipe
-{
-    color: var(--cor-nav-ativo);
+/* equipe.css */
+
+/* Hero da Página Equipe */
+.hero-equipe {
+    background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('/public/img/wallpaper-valenca.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 40vh;
+    min-height: 300px;
+    border-bottom: 5px solid var(--cor-warning);
+}
+
+/* Container da Foto do Membro */
+.team-img-container {
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+    overflow: hidden;
+    border: 5px solid #f8f9fa;
+    transition: all 0.4s ease;
+    background-color: #eee; /* Cor de fundo caso a imagem demore a carregar */
+}
+
+.team-card {
+    transition: all 0.4s ease;
+    border: 1px solid rgba(0,0,0,0.05);
+}
+
+.team-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 20px 40px rgba(0,0,0,0.1) !important;
+}
+
+.team-card:hover .team-img-container {
+    border-color: var(--cor-warning);
+    transform: scale(1.05);
+}
+
+/* Estilo para links sociais pequenos */
+.social-links .btn {
+    width: 32px;
+    height: 32px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    color: #666;
+    transition: all 0.3s ease;
+}
+
+.social-links .btn:hover {
+    background-color: var(--cor-warning);
+    color: white;
+}
+
+/* Ajuste no Nav Ativo */
+#equipe {
+    color: var(--cor-warning) !important;
+    font-weight: 700;
+}
+
+/* Responsividade */
+@media (max-width: 576px) {
+    .team-img-container {
+        width: 150px;
+        height: 150px;
+    }
 }
