@@ -1,87 +1,65 @@
+/* Variáveis para facilitar ajustes */
 :root {
-    --cor-warning: #ea9e3b;
-    --cor-dark: #212529;
-    --text-muted: #6c757d;
+    --cor-onda: #ea9e3b;
+    --cor-fundo-translucido: #ffffffd7;
+    --cor-nav-ativo: #ea9e3b;
 }
 
-/* Espaçamento para o Menu Fixo */
-body {
-    padding-top: 80px;
-    font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
-}
+#inicio { color: var(--cor-nav-ativo); }
 
-/* Hero Section */
-.hero-section {
-    background: linear-gradient(rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.8)), 
-                url('/public/img/wallpaper-valenca.jpg');
-    background-size: cover;
+/* Banner Principal */
+.atus-banner-container {
+    background-image: url(/public/img/wallpaper-valenca.jpg);
     background-position: center;
-    height: 70vh;
-    min-height: 500px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 60vh;
+    min-height: 400px;
 }
 
-.hero-card {
-    background-color: #fffffffa;
-    max-width: 650px;
-    border-left: 8px solid var(--cor-warning);
+.atus-banner-content {
+    background-color: var(--cor-fundo-translucido);
+    border-radius: 20px;
+    max-width: 600px;
 }
 
-/* Feature Cards */
-.card-feature {
-    padding: 2rem;
-    background: #f8f9fa;
-    border-radius: 1rem;
-    transition: all 0.3s ease;
-    border: 1px solid transparent;
+/* Divisor de Onda */
+.custom-shape-divider-bottom-1710505427 {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    transform: rotate(180deg);
+    margin-top: -50px;
+    z-index: 1;
 }
-
-.card-feature:hover {
-    background: #fff;
-    border-color: var(--cor-warning);
-    transform: translateY(-5px);
-    box-shadow: 0 1rem 3rem rgba(0,0,0,0.1);
-}
-
-/* Service Boxes */
-.service-box {
-    transition: all 0.3s ease;
-}
-
-.service-box:hover {
-    transform: scale(1.03);
-}
-
-.icon-circle {
-    width: 60px;
+  
+.custom-shape-divider-bottom-1710505427 svg {
+    display: block;
+    width: calc(100% + 1.3px);
     height: 60px;
-    background: #fff3e0;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border-radius: 50%;
-    font-size: 1.5rem;
 }
+
+/* Blocos de Conteúdo (Sua Identidade Visual) */
+.atus-informacoes, .atus-servicos, .atus-empresa {
+    background-color: #f8f9fa; /* Fundo leve para destacar o branco */
+}
+
+.atus-banner-content-secondary {
+    background-color: var(--cor-fundo-translucido);
+    border-radius: 20px;
+    border: 1px solid rgba(0,0,0,0.05);
+}
+
+.tracking-wider { letter-spacing: 0.1rem; }
 
 /* Tipografia */
-.tracking-wider {
-    letter-spacing: 0.15rem;
-}
+h2, h3 { color: #2c3e50; }
 
-.text-primary-emphasis {
-    color: var(--cor-warning) !important;
-}
-
-/* Links do Navbar */
-.nav-link {
-    padding: 0.5rem 1.2rem !important;
-    transition: color 0.3s;
-}
-
-.nav-link.active, .nav-link:hover {
-    color: var(--cor-warning) !important;
-}
-
-/* Footer Utility */
-.x-small {
-    font-size: 0.75rem;
-}
+.x-small { font-size: 0.8rem; }
+.small { font-size: 1rem; }
+.medium { font-size: 1.2rem; }
+.large { font-size: 1.4rem; }
+.x-large { font-size: 1.6rem; }
+.xx-large { font-size: 1.8rem; }
+.xxx-large { font-size: 2rem; }
