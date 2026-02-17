@@ -5,7 +5,7 @@
 
 .atus-banner-container
 {
-    background-image: url(../../public/img/wallpaper-valenca.jpg);
+    background-image: url(/public/img/wallpaper-valenca.jpg);
     background-position: center center;
     background-repeat: none;
     background-size: cover;
