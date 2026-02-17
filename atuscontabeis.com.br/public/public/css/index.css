@@ -116,3 +116,10 @@ body {
 .bg-success {
     background-color: #25d366 !important; /* Cor WhatsApp */
 }
+
+/* Aplique esta classe na tag <img> da sua logo no footer */
+.logo-footer {
+    filter: brightness(0) invert(1); 
+    /* brightness(0) deixa tudo preto, invert(1) transforma o preto em branco puro */
+    opacity: 0.9; /* Deixa um pouco mais elegante, menos "aceso" */
+}
