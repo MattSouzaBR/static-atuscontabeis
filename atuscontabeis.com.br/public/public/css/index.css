@@ -1,76 +1,56 @@
-/* Variáveis para facilitar a manutenção */
-:root {
-    --cor-nav-ativo: #003366;
-    --cor-fundo-da-pagina: #f8f9fa;
-    --cor-primaria: #003366;
-    --glass-bg: rgba(255, 255, 255, 0.85);
+#inicio
+{
+    color: var(--cor-nav-ativo);
 }
 
-#inicio {
-    color: var(--cor-nav-ativo) !important;
-    font-weight: bold;
-}
-
-.atus-banner-container {
-    background-image: linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.2)), url(/public/img/wallpaper-valenca.jpg);
+.atus-banner-container
+{
+    background-image: url(/public/img/wallpaper-valenca.jpg);
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
-    height: 60vh;
-    position: relative;
-    border: none !important;
+    height: 50vh;
+    position: relative; /* Adicionado para garantir o position absolute do content */
 }
 
-.atus-banner-content {
+.atus-banner-container .atus-banner-content
+{
     position: absolute;
-    bottom: 20px;
-    left: 20px;
-    right: 20px;
-    background-color: var(--glass-bg);
-    backdrop-filter: blur(10px);
+    bottom: 0;
+    background-color: #ffffffd7;
     border-radius: 20px;
-    padding: 2rem;
-    box-shadow: 0 8px 32px rgba(0,0,0,0.1);
 }
 
-.atus-banner-content-secondary {
-    background-color: white;
+.atus-banner-content-secondary
+{
+    background-color: #ffffffd7;
     border-radius: 20px;
-    box-shadow: 0 4px 15px rgba(0,0,0,0.05);
-    transition: transform 0.3s ease;
-}
-
-.card.atus-banner-content-secondary:hover {
-    transform: translateY(-5px);
 }
 
 .custom-shape-divider-bottom-1710505427 {
-    display: block;
+    position: relative;
+    bottom: 0;
+    left: 0;
     width: 100%;
     overflow: hidden;
     line-height: 0;
     transform: rotate(180deg);
-    margin-top: -1px; /* Evita fresta branca */
+    margin-top: -50px;
+    z-index: 1;
 }
-
+  
 .custom-shape-divider-bottom-1710505427 svg {
     position: relative;
     display: block;
     width: calc(100% + 1.3px);
-    height: 60px;
+    height: 53px;
 }
-
+  
 .custom-shape-divider-bottom-1710505427 .shape-fill {
     fill: var(--cor-fundo-da-pagina);
 }
-
-.atus-servicos, .atus-equipe, .atus-empresa, .atus-documentos {
+  
+.atus-servicos, .atus-equipe, .atus-empresa, .atus-documentos
+{
     background-color: var(--cor-fundo-da-pagina);
-    padding: 40px 0;
-}
-
-/* Ajuste para ecrãs pequenos */
-@media (max-width: 768px) {
-    .atus-banner-container { height: 70vh; }
-    .atus-banner-content { bottom: 10px; left: 10px; right: 10px; }
 }
