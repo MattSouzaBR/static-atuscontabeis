@@ -51,7 +51,8 @@
     fill: var(--cor-fundo-da-pagina);
 }
   
-.atus-servicos, .atus-equipe, .atus-empresa, .atus-documentos
+
+.atus-servicos, .atus-equipe, .atus-empresa, .atus-documentos, .atus-informacoes
 {
     background-color: var(--cor-fundo-da-pagina);
 }
