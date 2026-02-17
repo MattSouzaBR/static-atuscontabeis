@@ -37,6 +37,7 @@
     transform: rotate(180deg);
     margin-top: -50px;
     z-index: 1;
+    color: var(--cor-nav-ativo)
 }
   
 .custom-shape-divider-bottom-1710505427 svg {
