@@ -87,3 +87,32 @@ body {
 .nav-link:hover::after {
     width: 100%;
 }
+
+/* Efeito de Link no Footer */
+.footer-links a:hover {
+    color: var(--cor-warning) !important;
+    padding-left: 5px;
+    transition: all 0.3s ease;
+}
+
+/* Deixar a logo branca no footer preto */
+.brightness-0 {
+    filter: brightness(0);
+}
+.invert {
+    filter: invert(1);
+}
+
+/* Ajuste fino para os cards de equipe */
+.rounded-4 {
+    border-radius: 1.2rem !important;
+}
+
+.shadow-sm {
+    box-shadow: 0 .125rem .25rem rgba(0,0,0,.075) !important;
+}
+
+/* Cores específicas para ícones de contato */
+.bg-success {
+    background-color: #25d366 !important; /* Cor WhatsApp */
+}
