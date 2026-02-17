@@ -1,94 +1,87 @@
-#inicio
-{
-    color: var(--cor-nav-ativo);
+:root {
+    --cor-warning: #ea9e3b;
+    --cor-dark: #212529;
+    --text-muted: #6c757d;
 }
 
-.atus-banner-container
-{
-    background-image: url(/public/img/wallpaper-valenca.jpg);
-    background-position: center center;
-    background-repeat: no-repeat;
+/* Espaçamento para o Menu Fixo */
+body {
+    padding-top: 80px;
+    font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+}
+
+/* Hero Section */
+.hero-section {
+    background: linear-gradient(rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.8)), 
+                url('/public/img/wallpaper-valenca.jpg');
     background-size: cover;
-    height: 50vh;
-    position: relative; /* Adicionado para garantir o position absolute do content */
+    background-position: center;
+    height: 70vh;
+    min-height: 500px;
 }
 
-.atus-banner-container .atus-banner-content
-{
-    position: absolute;
-    bottom: 0;
-    background-color: #ffffffd7;
-    border-radius: 20px;
+.hero-card {
+    background-color: #fffffffa;
+    max-width: 650px;
+    border-left: 8px solid var(--cor-warning);
 }
 
-.atus-banner-content-secondary
-{
-    background-color: #ffffffd7;
-    border-radius: 20px;
+/* Feature Cards */
+.card-feature {
+    padding: 2rem;
+    background: #f8f9fa;
+    border-radius: 1rem;
+    transition: all 0.3s ease;
+    border: 1px solid transparent;
 }
 
-.custom-shape-divider-bottom-1710505427 {
-    position: relative;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    overflow: hidden;
-    line-height: 0;
-    transform: rotate(180deg);
-    margin-top: -50px;
-    z-index: 1;
-    color: var(--cor-nav-ativo)
-}
-  
-.custom-shape-divider-bottom-1710505427 svg {
-    position: relative;
-    display: block;
-    width: calc(100% + 1.3px);
-    height: 53px;
-}
-  
-.custom-shape-divider-bottom-1710505427 .shape-fill {
-    fill: var(--cor-fundo-da-pagina);
-}
-  
-
-.atus-servicos, .atus-equipe, .atus-empresa, .atus-documentos, .atus-informacoes
-{
-    background-color: var(--cor-fundo-da-pagina);
-}
-
-/* Refinamentos para a seção elegante */
-.atus-informacoes {
-    background-color: var(--cor-fundo-da-pagina);
-}
-
-.tracking-wider {
-    letter-spacing: 0.15em;
-}
-
-/* Efeito de hover suave nos cards de valor */
-.atus-informacoes .shadow-sm {
-    transition: transform 0.3s ease, shadow 0.3s ease;
-}
-
-.atus-informacoes .shadow-sm:hover {
+.card-feature:hover {
+    background: #fff;
+    border-color: var(--cor-warning);
     transform: translateY(-5px);
-    box-shadow: 0 10px 20px rgba(0,0,0,0.08) !important;
+    box-shadow: 0 1rem 3rem rgba(0,0,0,0.1);
 }
 
-/* Ajuste de cor do texto destaque (use a cor principal da Atus se não for azul) */
+/* Service Boxes */
+.service-box {
+    transition: all 0.3s ease;
+}
+
+.service-box:hover {
+    transform: scale(1.03);
+}
+
+.icon-circle {
+    width: 60px;
+    height: 60px;
+    background: #fff3e0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    font-size: 1.5rem;
+}
+
+/* Tipografia */
+.tracking-wider {
+    letter-spacing: 0.15rem;
+}
+
 .text-primary-emphasis {
-    color: #2c3e50; /* Um azul marinho profundo/cinza profissional */
+    color: var(--cor-warning) !important;
 }
 
-/* Deixar o fundo dos cards ligeiramente diferente do fundo da página */
-.bg-white {
-    background-color: #ffffff !important;
+/* Links do Navbar */
+.nav-link {
+    padding: 0.5rem 1.2rem !important;
+    transition: color 0.3s;
 }
 
-/* Ajuste para dispositivos móveis */
-@media (max-width: 768px) {
-    .display-6 {
-        font-size: 1.8rem;
-    }
+.nav-link.active, .nav-link:hover {
+    color: var(--cor-warning) !important;
+}
+
+/* Footer Utility */
+.x-small {
+    font-size: 0.75rem;
 }
