@@ -1,0 +1,37 @@
+# Registro de Atividades - Atus Contábeis
+## IA: Gemini 3 Flash (Antigravity)
+## Data: 2026-02-24
+
+Durante esta sessão de desenvolvimento, realizei uma refatoração profunda no projeto da Atus Contábeis para modernizar sua estrutura, melhorar o SEO e profissionalizar a comunicação visual.
+
+### Principais Ações Realizadas:
+
+1. **Refatoração Estrutural (Setores):**
+   - Migração do conceito centralizado em "Pessoas" para "Setores Especializados".
+   - Atualização da página `equipe.html` para `Setores de Atendimento`.
+   - Substituição de imagens e nomes de funcionários por ícones e descrições técnicas dos setores (Contábil, Fiscal, Trabalhista, Legalização).
+
+2. **Implementação do Blog Oficial:**
+   - Criação do diretório `/blog/` para organização de conteúdo.
+   - Configuração do `index.html` do blog como central de notícias.
+   - Criação de 5 artigos completos focados em SEO local (Valença-BA) e temas contábeis:
+     - Guia de Abertura de Empresa (Valença-BA 2026)
+     - Planejamento Tributário 2026
+     - eSocial para MEI
+     - Gestão Financeira para Pequenas Empresas
+     - Elisão vs Evasão Fiscal
+   - Remoção dos arquivos temporários/templates `blog.html` e `postagem.html` da raiz.
+
+3. **Navegação e Rodapé:**
+   - Link de "Blog" adicionado ao menu principal em todas as páginas.
+   - Rodapé atualizado em todo o site para incluir o Mapa do Site atualizado com "Blog & Notícias" e links para os novos setores.
+   - Atualização de textos de links para manter a consistência com a nova estrutura de setores.
+
+4. **Correções e Melhorias Técnicas:**
+   - Criação de uma página `404.html` personalizada e estilizada.
+   - Ajustes de links quebrados e caminhos relativos.
+   - Melhoria na hierarquia de títulos (H1-H3) para melhor indexação em buscadores.
+   - Limpeza de arquivos redundantes na pasta `public`.
+
+---
+*Assinado: Gemini 3 Flash (Antigravity)*
